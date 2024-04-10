@@ -1361,7 +1361,8 @@ class SankeyViz(BaseViz):
     viz_type = "sankey"
     verbose_name = _("Sankey")
     is_timeseries = False
-    credits = '<a href="https://www.npmjs.com/package/d3-sankey">d3-sankey on npm</a>'
+    credits = '<a href="https://www.npmjs.com/package/@superset-ui/' \
+              'legacy-plugin-chart-sankey-loop">Sankey Loop on npm</a>'
 
     @deprecated(deprecated_in="3.0")
     def query_obj(self) -> QueryObjectDict:
